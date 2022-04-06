@@ -63,8 +63,10 @@
 | 0x8d | 0p80.0d | GeoNetworking Management Communications (GN-MGMT) |  | ETSI | 2016-02-09 | assigned | [ETSI 302 636-4-1](https://www.etsi.org/deliver/etsi_en/302600_302699/3026360401/01.03.01_60/en_3026360401v010301p.pdf) |  |
 | 0x8e | 0p80.0e | Cooperative automation (CA) message for cooperative adaptive cruise control |  | SAE | 2016-02-09 | assigned | [SAE J2945/6](https://www.sae.org/standards/content/j2945/6/) |  |
 | 0x8f | 0p80.0f | V2X-based fee collection |  | SAE | 2021-02-04 | assigned | [SAE J3217](https://www.sae.org/standards/content/j3217/) |  |
-| 0x90 … 0xff | 0p80.10 … 0p80.7f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
-| 0x01.00 | 0p80.80 | Certificate Revocation List Application |  | CAMP | 2015-07-28 | assigned |  |  |
+| 0x90 | 0p80.10 | Sensor Sharing Service | | SAE | 2022-04-04 | assigned | [SAE 3224](https://www.sae.org/standards/content/j3224/) |  |
+| 0x91 | 0p80.11 | Maneuver Coordination Service |  | SAE | 2022-04-04 | assigned | [SAE J3268](https://www.sae.org/standards/content/j3268/) |  |
+| 0x92 … 0xff | 0p80.10 … 0p80.7f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
+| 0x01.00 | 0p80.80 | Certificate Revocation List Application |  | IEEE Std 1609.2 | 2015-07-28 | assigned |  |  |
 | 0x01.01 … 0x02.6d | 0p80.81 … 0p81.ed |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x02.6e | 0p81.ee | Certificate Revocation List (CRL) service |  | ETSI | 2018-03-19 | assigned | [ETSI 102 941](https://www.etsi.org/deliver/etsi_ts/102900_102999/102941/01.04.01_60/ts_102941v010401p.pdf) |  |
 | 0x02.6f | 0p81.ef | Secured certificate request service |  | ETSI | 2018-03-19 | assigned | [ETSI 102 941](https://www.etsi.org/deliver/etsi_ts/102900_102999/102941/01.04.01_60/ts_102941v010401p.pdf) |  |
@@ -142,9 +144,9 @@
 | 0x20.40.92 | 0pe0.00.00.12 | CV Pilot Application 11 |  | Crash Avoidance Metrics Partners LLC | 2017-02-08 | assigned |  |  |
 | 0x20.40.93 | 0pe0.00.00.13 | CV Pilot Application 12 |  | Crash Avoidance Metrics Partners LLC | 2017-02-08 | assigned |  |  |
 | 0x20.40.94 | 0pe0.00.00.14 | NYC CV Pilot Data Upload |  | Crash Avoidance Metrics Partners LLC | 2017-02-08 | assigned |  |  |
-| 0x20.40.95 | 0pe0.00.00.15 | CV Pilot traffic signal priority status |  | US DOT | 2017-02-08 | assigned |  |  |
-| 0x20.40.96 | 0pe0.00.00.16 | CV Pilot traffic signal request |  | US DOT | 2017-02-08 | assigned |  |  |
-| 0x20.40.97 | 0pe0.00.00.17 | CV Pilot MAP distribution |  | US DOT | 2017-02-08 | assigned |  |  |
+| 0x20.40.95 | 0pe0.00.00.15 | Traffic signal priority status |  | SAE | 2017-02-08 | assigned | [SAE 3268](https://www.sae.org/standards/content/j3268/) |  |
+| 0x20.40.96 | 0pe0.00.00.16 | Traffic signal request |  | SAE | 2017-02-08 | assigned | [SAE 3268](https://www.sae.org/standards/content/j3268/) |  |
+| 0x20.40.97 | 0pe0.00.00.17 | MAP distribution |  | SAE | 2017-02-08 | assigned | [SAE 3268](https://www.sae.org/standards/content/j3268/) |  |
 | 0x20.40.98 | 0pe0.00.00.18 | Peloton Platooning Service |  | Peloton Technology, Inc. | 2017-02-08 | assigned |  |  |
 | 0x20.40.99 | 0pe0.00.00.19 | Road Weather Applications |  | SAE |  | assigned |  |  |
 | 0x20.40.9a | 0pe0.00.00.1a | Honda Private Service S1 |  | Honda R&D Americas, Inc. |  | assigned |  |  |
