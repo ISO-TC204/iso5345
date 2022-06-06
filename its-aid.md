@@ -64,7 +64,7 @@
 | 0x8e | 0p80.0e | Cooperative automation (CA) message for cooperative adaptive cruise control |  | SAE | 2016-02-09 | assigned | [SAE J2945/6](https://www.sae.org/standards/content/j2945/6/) |  |
 | 0x8f | 0p80.0f | V2X-based fee collection |  | SAE | 2021-02-04 | assigned | [SAE J3217](https://www.sae.org/standards/content/j3217/) |  |
 | 0x90 | 0p80.10 | Sensor Sharing Service | | SAE | 2022-04-04 | assigned | [SAE 3224](https://www.sae.org/standards/content/j3224/) |  |
-| 0x91 | 0p80.11 | Maneuver Coordination Service |  | SAE | 2022-04-04 | assigned | [SAE J3268](https://www.sae.org/standards/content/j3268/) |  |
+| 0x91 | 0p80.11 | Maneuver Coordination Service |  | SAE | 2022-06-06 | assigned | [SAE J3186](https://www.sae.org/standards/content/j3186/) |  |
 | 0x92 … 0xff | 0p80.10 … 0p80.7f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x01.00 | 0p80.80 | Certificate Revocation List Application |  | IEEE Std 1609.2 | 2015-07-28 | assigned |  |  |
 | 0x01.01 … 0x02.6d | 0p80.81 … 0p81.ed |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
