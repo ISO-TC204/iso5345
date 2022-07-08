@@ -15,7 +15,7 @@ Some lists of registered items are relatively static and are only updated when t
 
 This site is maintained according to the procedures defined in ISO 5345, _Intelligent transport systems – Identifiers_ and the internal ISO/TC 204 Terms of Reference for this document. These documents specify that a maintenance agency reviews submittals and submits its recommendations to ISO/TC 204. If any objections are made to the recommended action, the full membership of ISO/TC 204 discusses the request at their next plenary and makes a final decision. 
 
-The current maintenance agency is listed on the [ISO maintenance agency website](https://www.iso.org/maintenance_agencies.html#5345). Parties who wish to request any change to the list of registered items should submit a completed request [form](form.html) to the maintenance agency.
+The current maintenance agency is listed on the [ISO maintenance agency website](https://www.iso.org/maintenance_agencies.html#5345). Parties who wish to request any change to the list of registered items should submit a completed request [form](form.pdf) to the maintenance agency.
 
 ## Item classes
 
