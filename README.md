@@ -1,8 +1,6 @@
 # Registry of Intelligent Transport System Items (RITSI) - DRAFT
 This site publishes identifier assignments for registered items that are recognized by International Organization for Standardization (ISO) Technical Committee (TC) 204, _Intelligent transport systems_ (ITS). 
 
-**This is a draft site that has been prepared as a submittal for ISO TC 204 approval and is based on [ISO/PRF 5345](https://www.iso.org/standard/81130.html).**
-
 ## Background
 
 Within information exchanges, there is often a need to unambiguously and concisely represent information. One way to achieve this is to define an identifier (e.g., an integer value) that can be used to concisely represent a specific meaning (e.g., the reference to a country, a standard, a protocol). The identifier might be an integer, a hierarchical structure (e.g., an ASN.1 OBJECT IDENTIFIER), a textual name, or any other concise representation (e.g., a two-character country code). 
@@ -13,11 +11,9 @@ Separate lists of registered items allow the same code (e.g., an integer value o
 
 Some lists of registered items are relatively static and are only updated when the text of the standard is updated. However, within ITS, several of these lists need to be updated in a more timely manner. ISO/TC 204 developed ISO 5345 to define the process for maintaining such lists. This website provides the official lists of registered items that are maintained per ISO 5345.
 
-**This is a draft site that has been prepared as a submittal for ISO TC 204 approval and is based on [ISO/PRF 5345](https://www.iso.org/standard/81130.html).**
-
 ## List maintenance
 
-This site is maintained according to the procedures defined in ISO 5345, _Intelligent transport systems – Identifiers_ and the internal ISO/TC 204 Terms of Reference for this document. These documents specify that a maintenance agency reviews requests and submits its recommendations to ISO/TC 204. If any objections are made to the recommended action, the full membershop of ISO/TC 204 discusses the request at their next plenary and makes a final decision. 
+This site is maintained according to the procedures defined in ISO 5345, _Intelligent transport systems – Identifiers_ and the internal ISO/TC 204 Terms of Reference for this document. These documents specify that a maintenance agency reviews submittals and submits its recommendations to ISO/TC 204. If any objections are made to the recommended action, the full membership of ISO/TC 204 discusses the request at their next plenary and makes a final decision. 
 
 The current maintenance agency is listed on the [ISO maintenance agency website](https://www.iso.org/maintenance_agencies.html#5345). Parties who wish to request any change to the list of registered items should submit a completed request [form](form.html) to the maintenance agency.
 
