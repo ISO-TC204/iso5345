@@ -91,7 +91,8 @@
 | 0x02.82 … 0x06.4f | 0p82.00 … 0p85.cf |  | **reserved for future assignments by the CEN registrar** |  |  | allocated |  |  |
 | 0x06.50 | 0p85.d0 | TMS message set parser |  | CEN TC278 WG17 | 2017-12-11 | assigned | [CEN/TS 17241](https://shop.bsigroup.com/ProductDetail?pid=000000000030380105) |  |
 | 0x06.51 | 0p85.d1 | eCall | eCall is mandatory and regulated in the EU | CEN TC278 WG15 | 2017-01-19 | assigned | CEN TC278 WI00278453 |  |
-| 0x06.52 … 0x0e.1f | 0p85.d2 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
+| 0x06.52 | 0p85.d2 | MRS | Misbehaviour Reporting Service | ETSI TC ITS | 2023-02-10 | allocated | ETSI TS 103 759 |  |
+| 0x06.53 … 0x0e.1f | 0p85.d3 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x0e.20  … 0x3e.7f | 0p8d.a0 … 0pbd.ff |  | **not yet available for assignments** |  |  | reserved |  |  |
 | 0x3e.80 … 0x40.1f | 0pbe.00 … 0pbf.9f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x40.20 … 0x40.5f | 0pbf.a0 ... 0pbf.df | Private (unregistered) Use |  | IEEE 1609 WG | 2011-07-13 | assigned | &lt;none> |  |
