@@ -1,8 +1,11 @@
 [Home](readme.md)
 
 #RITSI Registered items: ITS-SRSA
+
 Note 1: "Exp" stands for exponent.
+
 Note 2: Units and exponent information is recommended, not required.
+
 
 |ID |Description                           |Assignee  |Updated   |State   |Direction| Units  |Exp|Imprecision|
 |---|--------------------------------------|----------|----------|--------|---------|--------|---|-----------|
