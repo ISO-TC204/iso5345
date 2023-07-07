@@ -601,10 +601,10 @@ Supplemental roadside sensor/actuators (SRSA) represent devices that can be conn
     <td width="40%">
 		<table>
 			<tr><td>Specification</td></tr>
-			<tr><td>Direction (input, output, or bi-directional)</td></tr>
+			<tr><td>Direction</td></tr>
 			<tr><td>Recommended Units</td></tr>
-			<tr><td>Recommended Exponent (e.g., if Units is metre and Exponent is -2, the value is reported in centimetres)</td></tr>
-			<tr><td>Maximum Imprecision, expressed in the identified units with the identified exponent (e.g., <100 in the above example would indicate that if multiple readings were taken, they would all be within 1 metre of each other)</td></tr>
+			<tr><td>Recommended Exponent</td></tr>
+			<tr><td>Maximum Imprecision</td></tr>
 		</table>
 	</td>
     <td><a href="#general">General Policy</a></td>
@@ -625,6 +625,16 @@ In addition, codes are allocated according to the following policies:
 - Codes starting with a question mark (?) are reserved for unregistered use (and may have different meanings in different implementations)
 
 Additional allocations or re-allocations may be made as required.
+
+The special attributes have the following details:
+
+- Direction indicates the direction of the port, one of:
+ - input, indicates a sensor
+ - output, indicates an actuator
+ - bi-directional, indicates a combined sensor and actuator
+- Recommended Unit indicates the unit of measure to be applied to the value received from the port (e.g., metres)
+- Recommended Exponent indicates the factor of 10 applied to the units (e.g., if units is metre and exponent is -2, the value is reported in centimetres)
+- Maximum Imprecision indicates the maximum various to be expected across multiple readings of the same value, expressed in the same units as the reported value. For example, if the imprecision is "<100" in the above example, one would expect that multiple readings taken of the same condition could have a variance of up to 1 metre of each other.
 
 ## Policies
 
