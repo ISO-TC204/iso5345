@@ -584,6 +584,48 @@ An ITS station equipment manufacturer identifier (ITS-SEMID) provides a globally
   </tr>
 </table>
 
+### [ITS-SRSAType](its-srsa.md)
+
+Supplemental roadside sensor/actuators (SRSA) represent devices that can be connected to a roadside device to provide supplemental input/output (i.e., simple input and output that is not the primary function of the roadside devic). The type of data provided and representational form is defined by the ITS-SRSA type code (ITS-SRSAType). Registered items are defined per the rules contained in the following table. The list of registered items is provided [here](its-srsa.md). 
+ 
+
+<table style="width: 1000px">
+	<caption>ITS-SRSA Definition</caption>
+  <tr>
+	<th>Special Attributes</th>
+	<th>Policy</th>
+	<th>Datatype</th>
+	<th>Standards</th>
+  </tr>
+  <tr>
+    <td width="40%">
+		<table>
+			<tr><td>Specification</td></tr>
+			<tr><td>Direction (input, output, or bi-directional)</td></tr>
+			<tr><td>Recommended Units</td></tr>
+			<tr><td>Recommended Exponent (e.g., if Units is metre and Exponent is -2, the value is reported in centimetres)</td></tr>
+			<tr><td>Maximum Imprecision, expressed in the identified units with the identified exponent (e.g., <100 in the above example would indicate that if multiple readings were taken, they would all be within 1 metre of each other)</td></tr>
+		</table>
+	</td>
+    <td><a href="#general">General Policy</a></td>
+    <td>PrintableString (SIZE(3))</td>
+    <td>
+		<table>
+		<tr><td>ISO 26048-1</td></tr>
+		</table>
+	</td>
+  </tr>
+</table>
+
+In addition, codes are allocated according to the following policies:
+
+- Codes defined within ISO standards shall be assiged a code with all upper-case letters 
+- Codes defined by other standards shall be assigned a code with all lower-case letters
+- Non-standard codes shall be assigned a code with an initial hyphen
+- Codes starting with a question mark (?) are reserved for unregistered use (and may have different meanings in different implementations)
+
+Additional allocations or re-allocations may be made as required.
+
 ## Policies
 
 <a name="general"></a>
