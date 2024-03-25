@@ -605,6 +605,7 @@ Supplemental roadside sensor/actuators (SRSA) represent devices that can be conn
 			<tr><td>Recommended Units</td></tr>
 			<tr><td>Recommended Exponent</td></tr>
 			<tr><td>Maximum Imprecision</td></tr>
+			<tr><td>Test Activation</td></tr>
 		</table>
 	</td>
     <td><a href="#general">General Policy</a></td>
@@ -635,6 +636,7 @@ The special attributes have the following details:
 - Recommended Unit indicates the unit of measure to be applied to the value received from the port (e.g., metres)
 - Recommended Exponent indicates the factor of 10 applied to the units (e.g., if units is metre and exponent is -2, the value is reported in centimetres)
 - Maximum Imprecision indicates the maximum various to be expected across multiple readings of the same value, expressed in the same units as the reported value. For example, if the imprecision is "<100" in the above example, one would expect that multiple readings taken of the same condition could have a variance of up to 1 metre of each other.
+- Test Activation indicates whether the sensor requires support for active testing
 
 ## Policies
 
