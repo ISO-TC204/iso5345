@@ -44,7 +44,8 @@
 | 0x38 | 0p38 | NPRA road safety traffic management application No. 4 | Norwegian Public Road Administration (NPRA) | NPRA | 2019-10-07 | assigned | tbd |  |
 | 0x39 | 0p39 | NPRA road safety traffic management application No. 5 | Norwegian Public Road Administration (NPRA) | NPRA | 2019-10-07 | assigned | tbd |  |
 | 0x3a … 0x46 | 0p3a … 0p46 |  | **reserved for future assignments by the CEN registrar** |  |  | allocated | |  |
-| 0x47 … 0x6e | 0p47 … 0p6e |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
+| 0x47 | 0p47 | Automated Vehicle Marshalling Service (AVM) | Allows an ITS-S to disseminate information about remote operation control and status | ETSI TC ITS | 2024-06-03 | assigned | TS 103 882 |  |
+| 0x48 … 0x6e | 0p47 … 0p6e |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x6f … 0x7e | 0p6f … 0p7e |  | **not yet available for assignments** |  |  | reserved |  |  |
 | 0x7f | 0p7f | testing | Can be used by everybody for test purposes with special authorisation | IEEE 1609 WG | 2011-07-13 | assigned |  |  |
 | 0x80 | 0p80.00 | Differential GPS corrections, uncompressed |  | SAE | 2011-07-13 | assigned | SAE J2735 |  |
@@ -92,7 +93,8 @@
 | 0x06.50 | 0p85.d0 | TMS message set parser |  | CEN TC278 WG17 | 2017-12-11 | assigned | [CEN/TS 17241](https://shop.bsigroup.com/ProductDetail?pid=000000000030380105) |  |
 | 0x06.51 | 0p85.d1 | eCall | eCall is mandatory and regulated in the EU | CEN TC278 WG15 | 2017-01-19 | assigned | CEN TC278 WI00278453 |  |
 | 0x06.52 | 0p85.d2 | MRS | Misbehaviour Reporting Service | ETSI TC ITS | 2023-02-10 | allocated | ETSI TS 103 759 |  |
-| 0x06.53 … 0x0e.1f | 0p85.d3 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
+| 0x06.53 | 0p85.d3 | Point of Interest Service (POIS) | Allows an ITS-S to disseminate information about the status of a point of interest | ETSI TC ITS | 2024-06-03 | assigned | ETSI TS 103 916 |  |
+| 0x06.54 … 0x0e.1f | 0p85.d3 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x0e.20  … 0x3e.7f | 0p8d.a0 … 0pbd.ff |  | **not yet available for assignments** |  |  | reserved |  |  |
 | 0x3e.80 … 0x40.1f | 0pbe.00 … 0pbf.9f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x40.20 … 0x40.5f | 0pbf.a0 ... 0pbf.df | Private (unregistered) Use |  | IEEE 1609 WG | 2011-07-13 | assigned | &lt;none> |  |
