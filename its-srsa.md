@@ -27,7 +27,7 @@ Note 2: Units and exponent information is recommended, not required.
 |FGV|Field device: generator voltage            |ISO TC 204|2023-07-06|assigned|input    |Volts     |-2 |       <100|  No |
 |FHO|Field device: enclosure heater on          |ISO TC 204|2024-03-25|assigned|any      |Boolean   |0  |          0| Yes |
 |FLA|Field device: mains power line current*    |ISO TC 204|2023-07-06|assigned|input    |Amperes   |-2 |       <100|  No |
-|FLV|Field device: mains power line voltage     |ISO TC 204|2023-07-06|assigned|input    |Volts     |-2 |       <100|  No |
+|FLV|Field device: mains power line voltage in volts root mean squared |ISO TC 204|2023-07-06|assigned|input    |Vrms     |-2 |       <100|  No |
 |FPA|Field device: power supply output current  |ISO TC 204|2024-03-25|assigned|input    |Amperes   |-2 |       <100|  No |
 |FPS|Field device: power supply*                |ISO TC 204|2024-03-25|assigned|input    |Enumerated|0  |         NA|  No |
 |FPT|Field device: processor card temperature   |ISO TC 204|2023-07-06|assigned|input    |Celsius   |-2 |       <100|  No |
