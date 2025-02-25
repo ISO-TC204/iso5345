@@ -94,7 +94,8 @@
 | 0x06.51 | 0p85.d1 | eCall | eCall is mandatory and regulated in the EU | CEN TC278 WG15 | 2017-01-19 | assigned | CEN TC278 WI00278453 |  |
 | 0x06.52 | 0p85.d2 | MRS | Misbehaviour Reporting Service | ETSI TC ITS | 2023-02-10 | allocated | ETSI TS 103 759 |  |
 | 0x06.53 | 0p85.d3 | Point of Interest Service (POIS) | Allows an ITS-S to disseminate information about the status of a point of interest | ETSI TC ITS | 2024-06-03 | assigned | ETSI TS 103 916 |  |
-| 0x06.54 … 0x0e.1f | 0p85.d3 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
+| 0x06.54 | 0p85.d4 | Restricted Mode of Operation (RMO) | Enables devices to use a given frequency band under conditions that respect devices that have priority in that band. | ETSI TC ITS | 2025-02-15 | assigned | ETSI TS 103 745 |  |
+| 0x06.55 … 0x0e.1f | 0p85.d3 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x0e.20  … 0x3e.7f | 0p8d.a0 … 0pbd.ff |  | **not yet available for assignments** |  |  | reserved |  |  |
 | 0x3e.80 … 0x40.1f | 0pbe.00 … 0pbf.9f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x40.20 … 0x40.5f | 0pbf.a0 ... 0pbf.df | Private (unregistered) Use |  | IEEE 1609 WG | 2011-07-13 | assigned | &lt;none> |  |
