@@ -159,9 +159,12 @@
 | 0x20.40.9c | 0pe0.00.00.1c | Honda Private Service S3 |  | Honda R&D Americas, Inc. |  | assigned |  |  |
 | 0x20.40.9d | 0pe0.00.00.1d | Honda Private Service S4 |  | Honda R&D Americas, Inc. |  | assigned |  |  |
 | 0x20.40.9e | 0pe0.00.00.1e | Honda Private Service S5 |  | Honda R&D Americas, Inc. |  | assigned |  |  |
-| 0x20.40.9f | 0pe0.00.00.1f | Cohda V2X-Locate |  | Cohda Wireless Pty Ltd |  | assigned |  |  |
+| 0x20.40.9f | 0pe0.00.00.1f | R-ITS-S Ranging Service (RRS) |  | ETSI | 2025-05-26 | assigned | ETSI EN 302 890-2 |  |
 | 0x20.40.a0 | 0pe0.00.00.20 | Distribution of Activation Codes for Pseudonym Certificates |  | IEEE 1609 WG |  | assigned | [IEEE 1609.2.1](https://standards.ieee.org/standard/1609_2_1-2020.html) |  |
-| 0x20.40.a1 … 0x04.20.40.80 | 0pe0.00.00.21 … 0pe4.00.00.00 |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
+| 0x20.40.a1 | 0pe0.00.00.21 | Caterpillar, Inc. Construction and Mining |  | Caterpillar, Inc. | 2025-05-26 | assigned | Private Use |  |
+| 0x20.40.a2 | 0pe0.00.00.22 | Caterpillar, Inc. Construction and Mining 2 |  | Caterpillar, Inc. | 2025-05-26 | assigned | Private Use |  |
+| 0x20.40.a3 | 0pe0.00.00.23 | Automated Vehicle Marshalling System |  | SAE International | 2025-05-26 | assigned | SAE J32681 |  |
+| 0x20.40.a4 … 0x04.20.40.80 | 0pe0.00.00.24 … 0pe4.00.00.00 |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x04.20.40.81 … 0x08.20.40.80 | 0pe4.00.00.01 … 0pe8.00.00.00 |  | **reserved for future assignments by the CEN registrar** |  |  | allocated |  |  |
 | 0x08.20.40.81 … 0x10.20.3c.7f | 0pe8.00.00.01 … 0pef.ff.fb.ff |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x10.20.3c.80 … 0x10.20.40.7d | 0pef.ff.fc.00 … 0pef.ff.ff.fd | Testing | Can be used by anybody for test purposes with special authorisation | IEEE 1609 WG |  | assigned | &lt;none> |  |
