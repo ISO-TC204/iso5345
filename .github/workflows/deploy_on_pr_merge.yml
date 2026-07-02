@@ -1,12 +1,14 @@
-name: Deploy MkDocs site to GitHub Pages with Release Number
+name: Deploy MkDocs site to GitHub Pages on PR merge
 
 on:
   workflow_dispatch:
-  release:
-    types: [created]
+  pull_request:
+    types: [closed]
+    branches: [main]
 
 jobs:
   deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
@@ -14,6 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
+          ref: ${{ github.event.pull_request.merge_commit_sha || github.ref }}
           fetch-depth: 0 # Fetch full history for git-revision-date-localized-plugin
 
       # Step 2: Set up Python
@@ -32,15 +35,16 @@ jobs:
           pip install mike pymdown-extensions mkdocs-mermaid2-plugin
           npm install -g @mermaid-js/mermaid-cli
 
-      # Step 4: Get release tag, fall back to current date and time if no tag exists
+      # Step 4: Get version from merged PR, fall back to current date and time
       - name: Get release tag or use date
         id: get_version
         run: |
-          if [ -z "${{ github.event.release.tag_name }}" ]; then
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            MERGE_SHA=$(echo "${{ github.event.pull_request.merge_commit_sha }}" | cut -c1-7)
+            echo "RELEASE_TAG=pr-${{ github.event.pull_request.number }}-${MERGE_SHA}" >> $GITHUB_ENV
+          else
             DATE=$(date +"%Y-%m-%d_%H-%M-%S")
             echo "RELEASE_TAG=$DATE" >> $GITHUB_ENV
-          else
-            echo "RELEASE_TAG=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
           fi
 
       # Step 5: Replace placeholders in mkdocs.yml, docs, and css
