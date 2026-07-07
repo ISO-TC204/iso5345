@@ -2,21 +2,24 @@ name: Deploy MkDocs site to GitHub Pages on PR merge
 
 on:
   workflow_dispatch:
-  pull_request:
-    types: [closed]
+  # Merging a PR pushes to main; push events receive write-capable GITHUB_TOKEN
+  # (pull_request workflows are read-only and cannot push to gh-pages).
+  push:
     branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
       # Step 1: Check out the code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.merge_commit_sha || github.ref }}
+          ref: ${{ github.event_name == 'workflow_dispatch' && github.ref || github.sha }}
           fetch-depth: 0 # Fetch full history for git-revision-date-localized-plugin
 
       # Step 2: Set up Python
@@ -35,17 +38,22 @@ jobs:
           pip install mike pymdown-extensions mkdocs-mermaid2-plugin
           npm install -g @mermaid-js/mermaid-cli
 
-      # Step 4: Get version from merged PR, fall back to current date and time
+      # Step 4: Version from merge commit on push, or date for manual runs
       - name: Get release tag or use date
         id: get_version
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            MERGE_SHA=$(echo "${{ github.event.pull_request.merge_commit_sha }}" | cut -c1-7)
-            echo "RELEASE_TAG=pr-${{ github.event.pull_request.number }}-${MERGE_SHA}" >> $GITHUB_ENV
-          else
+#          if [ "${{ github.event_name }}" = "push" ]; then
+#            SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+#            PR_NUMBER=$(echo "${{ github.event.head_commit.message }}" | sed -n 's/.*Merge pull request #\([0-9]*\).*/\1/p')
+#            if [ -n "$PR_NUMBER" ]; then
+#              echo "RELEASE_TAG=pr-${PR_NUMBER}-${SHORT_SHA}" >> $GITHUB_ENV
+#            else
+#              echo "RELEASE_TAG=${SHORT_SHA}" >> $GITHUB_ENV
+#            fi
+#          else
             DATE=$(date +"%Y-%m-%d_%H-%M-%S")
             echo "RELEASE_TAG=$DATE" >> $GITHUB_ENV
-          fi
+#          fi
 
       # Step 5: Replace placeholders in mkdocs.yml, docs, and css
       - name: Replace placeholders in files
