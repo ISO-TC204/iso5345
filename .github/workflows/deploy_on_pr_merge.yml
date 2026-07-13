@@ -24,7 +24,7 @@ jobs:
 
       # Step 2: Set up Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
@@ -38,22 +38,12 @@ jobs:
           pip install mike pymdown-extensions mkdocs-mermaid2-plugin
           npm install -g @mermaid-js/mermaid-cli
 
-      # Step 4: Version from merge commit on push, or date for manual runs
+      # Step 4: Use timestamp as release tag
       - name: Get release tag or use date
         id: get_version
         run: |
-#          if [ "${{ github.event_name }}" = "push" ]; then
-#            SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
-#            PR_NUMBER=$(echo "${{ github.event.head_commit.message }}" | sed -n 's/.*Merge pull request #\([0-9]*\).*/\1/p')
-#            if [ -n "$PR_NUMBER" ]; then
-#              echo "RELEASE_TAG=pr-${PR_NUMBER}-${SHORT_SHA}" >> $GITHUB_ENV
-#            else
-#              echo "RELEASE_TAG=${SHORT_SHA}" >> $GITHUB_ENV
-#            fi
-#          else
-            DATE=$(date +"%Y-%m-%d_%H-%M-%S")
-            echo "RELEASE_TAG=$DATE" >> $GITHUB_ENV
-#          fi
+          DATE=$(date +"%Y-%m-%d_%H-%M-%S")
+          echo "RELEASE_TAG=$DATE" >> "$GITHUB_ENV"
 
       # Step 5: Replace placeholders in mkdocs.yml, docs, and css
       - name: Replace placeholders in files
@@ -70,13 +60,13 @@ jobs:
           # sed -i "s/{{ release_number }}/$RELEASE_TAG/g" docs/stylesheets/pdf.css
 
       # Step 6: Run the glossary processing script
-#      - name: Generate glossary annex
-#        run: |
-#          python process_glossary.py
+      # - name: Generate glossary annex
+      #   run: |
+      #     python process_glossary.py
 
       # Step 7: Set EXPORT_PDF environment variable
       - name: Set EXPORT_PDF environment variable
-        run: echo "EXPORT_PDF=1" >> $GITHUB_ENV
+        run: echo "EXPORT_PDF=1" >> "$GITHUB_ENV"
 
       # Step 8: Build the site (this will generate the PDF if EXPORT_PDF is set)
       - name: Build the site
