@@ -100,7 +100,8 @@ This list is identical to and coordinated with the [Provider Service Identifier 
 | 0x06.54 | 0p85.d4 | Restricted Mode of Operation (RMO) | Enables devices to use a given frequency band under conditions that respect devices that have priority in that band. | ETSI TC ITS | 2025-02-15 | assigned | ETSI TS 103 745 |  |
 | 0x06.55 | 0p85.d5 | Parking Information Distribution System | Intelligent Transport Systems (ITS); Facilities Layer; Parking Information Service | ETSI TC ITS | 2025-03-21 | assigned | ETSI TS 104 072 |  |
 | 0x06.56 | 0p85.d6 | Misbehaviour Detection Management | Allows an ITS station to report misbehaviour such that it can be investigated by a misbehaviour authority | ETSI TC ITS | 2025-07-18 | assigned | ETSI TS 103 759 |  |
-| 0x06.57 … 0x0e.1f | 0p85.d7 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
+| 0x06.57 | 0p85.d7 | Multi-media service protocol layer for Cooperative Automated Driving Service  | ITS-MSL (ITS Multi-Media Support Layer) is a multimedia service protocol layer that enables ITS applications to utilize multiple communication media | Association of Radio Industries and Businessses - Japan | 2026-10-13 | assigned | ARIB STD-T122 |  |
+| 0x06.58 … 0x0e.1f | 0p85.d8 … 0p8d.9f |  | **reserved for future assignments by ISO/TC 204** |  |  | allocated |  |  |
 | 0x0e.20  … 0x3e.7f | 0p8d.a0 … 0pbd.ff |  | **not yet available for assignments** |  |  | reserved |  |  |
 | 0x3e.80 … 0x40.1f | 0pbe.00 … 0pbf.9f |  | **reserved for future assignments by the IEEE registrar** |  |  | allocated |  |  |
 | 0x40.20 … 0x40.5f | 0pbf.a0 ... 0pbf.df | Private (unregistered) Use |  | IEEE 1609 WG | 2011-07-13 | assigned | &lt;none> |  |
