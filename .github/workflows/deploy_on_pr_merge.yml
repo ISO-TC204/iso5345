@@ -12,7 +12,9 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # Pin away from ubuntu-latest during the 24.04 → 26.04 (Resolute) transition;
+    # Resolute apt mirrors have been returning 404s for weasyprint/python3-pil.
+    runs-on: ubuntu-24.04
 
     steps:
       # Step 1: Check out the code
@@ -31,7 +33,8 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          sudo apt install -y weasyprint
+          sudo apt-get update
+          sudo apt-get install -y weasyprint
           pip install mkdocs-material pymdown-extensions
           pip install mkdocs-git-revision-date-localized-plugin
           pip install mkdocs-to-pdf
